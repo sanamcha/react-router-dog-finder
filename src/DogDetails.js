@@ -10,7 +10,7 @@ const DogDetails = ({dogList}) => {
     if (!d) return <Redirect to="/dogs"/>
 
     return (
-        <div>
+        <div className="DogDetails">
             <h1>{d.name}</h1>
             <img 
             src={d.src}

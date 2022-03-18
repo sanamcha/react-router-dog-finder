@@ -4,15 +4,17 @@ import {NavLink} from 'react-router-dom';
 
 const DogList = ({dogs}) => {
     return (
-        <nav>
+        <div className="DogList">
+            
             {dogs.map((dog) => {
-                return (
+                return ( 
                     <NavLink key={dog.name} to={`/dogs/${dog.name}`}>
-                        {dog.name}
+                        {dog.name}    
                     </NavLink>
                 );
             })}
-        </nav>
+        </div>
+ 
     );
 }
 

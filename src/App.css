@@ -1,0 +1,10 @@
+.DogDetails img {
+    max-width: 50%;
+    border-radius: 5px;
+  }
+  
+
+.DogList > a {
+    margin: 20px;
+    font-size: 2rem;
+  }

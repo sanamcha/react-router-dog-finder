@@ -7,6 +7,7 @@ import whiskey from "./dogs/whiskey.jpg";
 import tubby from "./dogs/tubby.jpg";
 import duke from "./dogs/duke.jpg";
 import perry from "./dogs/perry.jpg";
+import './App.css';
 
 function App({dogs}) {
   return (
