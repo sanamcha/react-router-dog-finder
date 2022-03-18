@@ -1,7 +1,7 @@
 import React from 'react';
-
+import { BrowserRouter, Route, Redirect} from "react-router-dom";
 import DogList from './DogList';
-import { BrowserRouter, Route, Redirect} from "react-router-dom"
+import DogDetails from './DogDetails';
 
 import whiskey from "./dogs/whiskey.jpg";
 import tubby from "./dogs/tubby.jpg";
@@ -14,13 +14,13 @@ function App({dogs}) {
    <Route exact path="/dogs">
       <DogList dogs={dogs} />
     </Route>
+    <Route exact path="/dogs/:name">
+      <DogDetails dogList={dogs} />
+    </Route>
 
   <Redirect to="/dogs" />
    </BrowserRouter>
-    
 
-    
-     
   );
 }
 
